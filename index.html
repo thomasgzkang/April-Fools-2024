@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            font-family: Arial, sans-serif;
+            align-items: center;
+        }
+        img{
+            width: 260px;
+            height:120px;
+        }
+        .big_container{
+            display: flex; 
+            flex-direction: row; 
+            align-items: center; 
+            justify-content: center;
+        }
+        .container {
+            width: 60%;
+            height: 40%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            margin-top: 10%;
+            border-style: outset;
+            border-color: rgba(231, 229, 229, 0.5);
+            border-width: 1px;
+            flex-direction: column;
+            background-color: black;
+            color: white;
+            box-shadow: 0 0 50px 1px #f6f7f7
+        }
+        .button1 {
+            margin-top: 20px;
+            padding: 10px 20px;
+            width: 15rem;
+            height: 3rem;
+            font-size: 16px;
+            font-weight: 700;
+            background-color: #f90;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button2 {
+            margin-top: 20px;
+            padding: 10px 20px;
+            width: 15rem;
+            height: 3rem;
+            font-size: 16px;
+            font-weight: 700;
+            background-color: #ffffff;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        h1{
+            color:white;
+        }
+        h3{
+            width: 60%;
+            color:rgb(206, 205, 205);
+        }
+    </style>
+</head>
+<body>
+    <div  class="big_container">
+        <div class="container">
+            <img src="porkhub.jpg" alt="100% halal" >
+            <h1>Age Verification</h1>
+            <h3>This website contains age-restricted materials including nudity and explicit depictions of sexual activity. By entering, you affirm that you are at least 18 years of age or the age of majority in the jurisdiction you are accessing the website from and you consent to viewing sexually explicit content.</h3>
+        
+            <div class="butt">
+                <button onclick="redirectToRickRoll()" class="button1">I am 18 or older - Enter</button>
+                <button onclick="redirectToBabyShark()" class="button2">I am under 18 - Exit</button>
+            </div>
+    
+            <h3>Our <span style="color: #f90">parental controls page</span> explains how you can easily block access to this site.</h3>
+        </div>
+    </div>
+
+    <script>
+        function redirectToRickRoll() {
+            window.location.href = 'rick.html';
+        }
+
+        function redirectToBabyShark() {
+            window.location.href = "https://www.youtube.com/watch?v=XqZsoesa55w";
+        }
+    </script>
+</body>
+</html>

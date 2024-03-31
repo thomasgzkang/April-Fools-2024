@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rick Roll Prank</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-image: url('lebron.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: 100%,100%;
+        }
+        #video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+        }
+        #pauseButton {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 20px;
+            padding: 10px;
+            background-color: grey;
+            color: rgb(251, 251, 251);
+            box-shadow: 0 0 50px 50px rgb(0, 0, 0);
+            font-weight: 1000;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="pauseButton" onclick="moveButton()">Pause Video</button>
+    <audio autoplay loop>
+        <source src="sunshine.mp3">
+    </audio>
+
+    <script>
+        function moveButton() {
+            var button = document.getElementById("pauseButton");
+            var new_x = Math.random() * (window.innerWidth - button.offsetWidth);
+            var new_y = Math.random() * (window.innerHeight - button.offsetHeight);
+            button.style.left = new_x + "px";
+            button.style.top = new_y + "px";
+        }
+    </script>
+</body>
+</html>
